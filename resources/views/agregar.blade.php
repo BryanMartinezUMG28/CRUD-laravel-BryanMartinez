@@ -10,7 +10,10 @@
 
 
         <p class="card-text">
-        <form action="#">
+
+
+        <form action="{{route('personas.store')}}" method="POST">
+            @csrf
             <label for="">Apellido paterno</label>
             <input type="text" name="paterno" class="form-control" required>
 
